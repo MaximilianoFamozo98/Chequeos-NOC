@@ -8,12 +8,13 @@ body {
     background-repeat: no-repeat;
 
 }
+
 body h3 {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -45,4 +46,31 @@ body h3 {
     text-align: center;
     color: #fff;
     margin-top: 10px;
+}
+
+
+@media (max-width: 867px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        
+        
+    }
+}
+
+@media (max-width: 775px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        
+        
+    }
+}
+
+
+@media (max-width: 540px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
